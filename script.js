@@ -1,5 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+generateBtn.addEventListener('click', function() {
+  const userInput = prompt("Hello, welcome to Password Generator", "How many characters would you like your password to be?");
+  console.log(userInput);
+});
+
+
 
 //var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 //var passwordLength = 20;
@@ -11,35 +17,17 @@ var generateBtn = document.querySelector("#generate");
 // alert
 
 // var.passwordLength = prompt("what do you want your password to be? Between 8 and 30 characters");
+var password = "";
+var length = "";
+var numbers = "";
+var upperCase = "";
+var lowerCase = "";
+var symbols = "";
 
-function generate(){
-  const length = document.getElementById("length").value;
-  const length = document.getElementById("numbers").ariaChecked;
-  const length = document.getElementById("upperCase").ariaChecked;
-  const length = document.getElementById("lowerCase").ariaChecked;
-  const length = document.getElementById("symbols").ariaChecked;
-}
+//prompt here to ask the questions then follow each with "confirm"
+prompt("Hello, welcome to Password Generator", "How long would you like your password to be?");
 
-function generatePassword(length, numbers, upperCase, lowerCase, symbols) { 
-  
-  var password = "";
-  
-  if (numbers){
-    password += "0123456789";
-  }
 
-  if (upperCase){
-    password = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  }
-
-  if (lowerCase){
-    password = "abcdefghijklmnopqrstuvwxyz";
-  }
-
-  if (upperCase){
-    password = "!£$%^&*";
-  }
-}
 
 // GIVEN I need a new, secure password:-
 // WHEN I click the button to generate a password
@@ -66,7 +54,7 @@ function generatePassword(length, numbers, upperCase, lowerCase, symbols) {
 // THEN a password is generated that matches the selected criteria
 // WHEN the password is generated
 // THEN the password is either displayed in an alert or written to the page
-}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword(); // been called but doesnt exist
