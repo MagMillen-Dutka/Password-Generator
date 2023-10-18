@@ -1,5 +1,6 @@
-// Assignment Code
+// Button code
 var generateBtn = document.querySelector("#generate");
+generateBtn.addEventListener("click", function () { writePassword(getPassword()) });
 
 // A function to get the password
     function getPassword() {
@@ -13,9 +14,7 @@ var generateBtn = document.querySelector("#generate");
     var randomKey = "";
 
 // First prompt to explain criteria
-    var keyLength = prompt(
-        "Your password must be between 8 to 128 characters long."
-    );
+    var keyLength = prompt("The password must be between 8 to 128 characters long", "Please type the length");
     
 // If user selects wrong criteria, this section will explain they need to try again.
     if (keyLength < 8 || keyLength > 128 || isNaN(keyLength)) {
@@ -24,13 +23,13 @@ var generateBtn = document.querySelector("#generate");
 
 // Confirmation to user of values to be used in password.
     } else {
-    var uppercase = confirm("Your password will contain a variety of uppercase letters, click ok to continue");
+    var uppercase = confirm("The password will have uppercase letters.");
     if (uppercase) {characters += upper;}
-    var lowercase = confirm("Your password will contain a variety of lowercase letters, click ok to continue");
+    var lowercase = confirm("The password will have lowercase letters.");
     if (lowercase) {characters += lower;}
-    var symbols = confirm("Your password will contain a variety of symbols, click ok to continue");
+    var symbols = confirm("The password will have symbols.");
     if (symbols) {characters += signs;}
-    var digits = confirm("Your password will contain numbers, click ok to continue");
+    var digits = confirm("The password will have numbers.");
     if (digits) {characters += numbers;}
     
     }
