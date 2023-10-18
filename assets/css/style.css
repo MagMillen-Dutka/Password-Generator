@@ -12,9 +12,10 @@ body,
   padding: 0;
 }
 
+/* Change to the background colour so that I could more easily view the screen */
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #d2e7fb;
 }
 
 .wrapper {
