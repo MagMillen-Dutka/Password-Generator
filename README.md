@@ -1,7 +1,9 @@
 # JavaScript Challenge
 ## Description
 
-This project worked on using the skills learnt in JavaScript to be able to create basic level functionality for a website page. The index.html and style.css files were already created, but the website lacked the necessary functionality.
+This project worked on using the skills learnt in JavaScript to be able to create basic level functionality for a website page - specifically the creation of a password generator with prompts used for the user to understand key criteria.
+
+The index.html and style.css files were already created, but the website lacked the necessary functionality of JavaScript.
 
 It follows the user story and acceptance criteria detailed below.
 
