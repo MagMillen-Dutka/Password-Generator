@@ -1,11 +1,8 @@
 // Button code
 var generateBtn = document.querySelector("#generate");
-generateBtn.addEventListener("click", function () { writePassword(getPassword()) });
 
-// A function to get the password
-    function getPassword() {
-    
-// Password variables for allowable passwords characters
+
+// Password variables
     var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     var lower = "abcdefghijklmnopqrstuvwxyz"
     var numbers = "0123456789"
@@ -13,6 +10,9 @@ generateBtn.addEventListener("click", function () { writePassword(getPassword())
     var characters = "";
     var randomKey = "";
 
+// Main function section
+function getPassword() {
+  
 // First prompt to explain criteria
     var keyLength = prompt("The password must be between 8 to 128 characters long", "Please type the length");
     
@@ -21,7 +21,7 @@ generateBtn.addEventListener("click", function () { writePassword(getPassword())
         alert("The password must be between 8 and 128 characters in length. Try Again.");        
         return;
 
-// Confirmation to user of values to be used in password.
+// Confirming with user of values to be used in password.
     } else {
     var uppercase = confirm("The password will have uppercase letters.");
     if (uppercase) {characters += upper;}
@@ -44,12 +44,15 @@ generateBtn.addEventListener("click", function () { writePassword(getPassword())
 
 // Displaying password from the criteria above
     var passwordText = document.querySelector("#password");
+    
     function writePassword(randomKey) {
     if (password.length === 0) {
         return;
     }
     passwordText.value = randomKey;
+    
 }
 
+generateBtn.addEventListener("click", function () { writePassword(getPassword())});
 
     
