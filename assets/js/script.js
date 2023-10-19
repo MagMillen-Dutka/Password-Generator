@@ -9,11 +9,11 @@ var generateBtn = document.querySelector("#generate");
     var signs = "!£$%^&*#"
   
 
-// Main function section
+// Main function section - Please note: var characters/randomKey MUST be kept local - globally stops old password from being erased by new password and instead adds them together.
 function getPassword() {
   var characters = "";
   var randomKey = "";
-  
+
 // First prompt to explain criteria
     var keyLength = prompt("The password must be between 8 to 128 characters long", "Please type the length");
     
