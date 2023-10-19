@@ -7,11 +7,12 @@ var generateBtn = document.querySelector("#generate");
     var lower = "abcdefghijklmnopqrstuvwxyz"
     var numbers = "0123456789"
     var signs = "!£$%^&*#"
-    var characters = "";
-    var randomKey = "";
+  
 
 // Main function section
 function getPassword() {
+  var characters = "";
+  var randomKey = "";
   
 // First prompt to explain criteria
     var keyLength = prompt("The password must be between 8 to 128 characters long", "Please type the length");
