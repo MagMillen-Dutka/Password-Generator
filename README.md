@@ -7,13 +7,27 @@ The index.html and style.css files were already created, but the website lacked 
 
 It follows the user story and acceptance criteria detailed below.
 
+## Table of Contents:
+* [License](#license)
+* [User Story](#user-story)
+* [Acceptance Criteria](#acceptance-criteria)
+* [Installation Process](#installation-process)
+* [Sources](#sources)
+* [Links](#links)
+* [Screenshots](#screenshots)
+
+## License
+```
+For licensing details please see "LICENSE" details within the repository.
+
+MIT License is used for this project.
+```
 ## User Story
 
 ```
 AS AN employee with access to sensitive data
 I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
-```
 ```
 
 ## Acceptance Criteria
@@ -38,10 +52,18 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Installation
 ```
-n/a
+From the repository in GitHub you will need to follow this route to install the code and associated files on your local computer:
+* Clone the repository.
+* Open the repository in your local CLI (Git Bash, as an example).
+* You can now amend and check the code on your local device.
+* To view, right click on the index.html file within a source code editor, and open in your choice of browser.
+
 ```
-## Usage
-```
+## Sources
+Mag Millen-Dutka [Github](https://github.com/MagMillen-Dutka)
+
+## Links
+
 Please find the source code located here: 
 https://github.com/MagMillen-Dutka/UBHM-03-JavaScript-02-Challenge/blob/main/assets/js/script.js
 
@@ -52,14 +74,7 @@ https://magmillen-dutka.github.io/UBHM-03-JavaScript-02-Challenge/
 
 Opening this site will allow the user to be able to visually see, and physically test the password generator tool.
 
-```
-## Credits
-```
-n/a
-```
-## License
-```
-For licensing details please see "LICENSE" details within the repository.
 
-MIT License is used for this project.
-```
+## Screenshots
+
+![Homepage](/assets/images/Screenshot.jpg)
